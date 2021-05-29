@@ -15,49 +15,299 @@
       integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
       crossorigin="anonymous"
     />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&family=Squada+One&display=swap" rel="stylesheet">
+    
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
       rel="stylesheet"
     />
+    
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Work Day Scheduler</title>
     
   </head>
 
   <body>
+    <!-- Hero -->
     <header class="jumbotron">
       <h1 class="display-3">Work Day Scheduler</h1>
       <p class="lead">A simple calendar app for scheduling your work day</p>
       <p id="currentDay" class="lead"></p>
     </header>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <button id="create-task" class="btn btn-block btn-add" data-toggle="modal" data-target="#task-form-modal"><span class="oi oi-plus mr-2"></span>Add Task</button>
-        </div>
+    <!-- Add Task -->
+    <div class="row">
+      <div class="col add">
+        <button id="create-task" class="btn btn-block btn-add tskaddBtn" data-toggle="modal" data-target="#task-form-modal"><span class="oi oi-plus mr-2"></span>Add Task</button>
       </div>
+    </div>
+    <div class="container">
+      <br>
+      <br>
+<!-- Events -->
       <ul>
         <li class="list-group-item" id="7-am">
           <div class="row">
-            <div class="col-2 col-sm-2 col-md-1 col-xs-1 first">
-              <span class="before-tsk">7AM</span>
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">7:00AM</span>
             </div>
-            <div class="col-8 col-sm-8 col-md-10 col-xs-10 " id="7am-task">
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
               <span class="task" id="task-entry">Good Morning, Vietnam!</span>
             </div> 
-            <div class="col-2 col-sm-2 col-md-1 col-xs-1 last">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
             <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
             </div>
           </div>
         </li>
       </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">8:00AM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">9:00AM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">10:00AM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">11:00AM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">12:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">1:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">2:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">3:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">4:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">5:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">6:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">7:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">8:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul>
+        <li class="list-group-item" id="7-am">
+          <div class="row">
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 hour">
+              <span class="before-tsk">9:00PM</span>
+            </div>
+            <div class="col-8 col-sm-8 col-md-10 col-xs-10 middle" id="7am-task">
+              <span class="task" id="task-entry">Good Morning, Vietnam!</span>
+            </div> 
+            <div class="col-2 col-sm-2 col-md-1 col-xs-1 saveBtn">
+            <span input type="submit" class="oi oi-clipboard mr-2 justify-content-center align-items-center"></span>
+            </div>
+          </div>
+        </li>
+      </ul>
+      
+
+    </div>
+      <!-- Delete Task -->
       <div class="row">
-        <div class="col">
-          <button id="remove-tasks" class="btn btn-block btn-delete mb-2 mb-md-4"><span class="oi oi-trash mr-2"> </span>Delete All Tasks</button>
+        <div class="col delete">
+          <button id="remove-tasks" class="btn btn-block btn-delete  tskdeleteBtn"><span class="oi oi-trash mr-2"> </span>Delete All Tasks</button>
+        </div>
+      </div>
+      <!-- Modal -->
+  <div class="modal fade" id="task-form-modal" tabindex="-1" role="dialog" aria-labelledby="task-form-modal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="myModalTitle">Add New Task</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="modalTaskDescription">Task description</label>
+              <textarea class="form-control" id="modalTaskDescription" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="modalDueDate">Due date</label>
+              <input type="text" class="form-control" placeholder="mm/dd/yyyy" id="modalDueDate" autocomplete="off">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-close" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-save">Save changes</button>
         </div>
       </div>
     </div>
-
+  </div>
+<script src="./assets/js/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
   </body>
