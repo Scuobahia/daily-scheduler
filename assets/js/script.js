@@ -62,6 +62,7 @@ setInterval(function(){
     });
     console.log("checked")
 }, 1000);
+
 $('.txtAr0800').val(localStorage.getItem('8'));
 $('.txtAr0900').val(localStorage.getItem('9'));
 $('.txtAr1000').val(localStorage.getItem('10'));
@@ -73,3 +74,23 @@ $('.txtAr1500').val(localStorage.getItem('3'));
 $('.txtAr1600').val(localStorage.getItem('4'));
 $('.txtAr1700').val(localStorage.getItem('5'));
 $('.txtAr1800').val(localStorage.getItem('6'));
+
+$('.clearBtn').on('click', function (event) {
+    event.preventDefault();
+
+    if (confirm ('Are you sure you want to clear the entire form? This cannot be undone!') === true) {
+    $('#8 .txtAr0800').val('');
+    $('#9 .txtAr0900').val('');
+    $('#10 .txtAr1000').val('');
+    $('#11 .txtAr1100').val('');
+    $('#12 .txtAr1200').val('');
+    $('#1 .txtAr1300').val('');
+    $('#2 .txtAr1400').val('');
+    $('#3 .txtAr1500').val('');
+    $('#4 .txtAr1600').val('');
+    $('#5 .txtAr1700').val('');
+      localStorage.clear();
+    } else {
+      return;
+    }
+  });
